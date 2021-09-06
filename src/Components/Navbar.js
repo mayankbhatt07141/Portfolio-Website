@@ -6,19 +6,42 @@ function Navbar() {
   const [showlinks, setShowlinks] = useState(false);
   return (
     <div className="navbar">
-      //{" "}
       <div className="left-nav">
         <div className="links-container" id={showlinks ? "open-links" : ""}>
-          <Link to="/" className="links">
+          <Link
+            to="/"
+            className="links"
+            onClick={() => {
+              setShowlinks(!showlinks);
+            }}
+          >
             Home
           </Link>
-          <Link to="/skills" className="links">
+          <Link
+            to="/skills"
+            className="links"
+            onClick={() => {
+              setShowlinks(!showlinks);
+            }}
+          >
             Skills
           </Link>
-          <Link to="/about" className="links">
+          <Link
+            to="/about"
+            className="links"
+            onClick={() => {
+              setShowlinks(!showlinks);
+            }}
+          >
             About
           </Link>
-          <Link to="/feedback" className="links">
+          <Link
+            to="/feedback"
+            className="links"
+            onClick={() => {
+              setShowlinks(!showlinks);
+            }}
+          >
             Feedback
           </Link>
         </div>
@@ -32,7 +55,9 @@ function Navbar() {
         </button>
       </div>
       <div className="right-nav">
-        <h1 className="logo">logo</h1>
+        <Link to="/about" className="links">
+          Logo
+        </Link>
       </div>
     </div>
   );

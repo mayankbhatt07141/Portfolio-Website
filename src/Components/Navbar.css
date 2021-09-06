@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 .navbar {
-  background-color: rgba(36, 28, 28, 0.783);
+  background-color: black;
   display: flex;
   height: 80px;
   width: 100%;
@@ -21,7 +21,7 @@ body {
   display: flex;
 }
 .links {
-  color: white;
+  color: #d3d3d3;
   font-size: 25px;
   padding: 18px;
   text-decoration: none;

@@ -1,0 +1,49 @@
+.about-container {
+  height: 100vh;
+  background-color: rgba(41, 51, 45, 0.783);
+  position: relative;
+}
+.path-name-container {
+  display: flex;
+  background-color: #d3d3d3;
+  height: 150px;
+  font-size: 35px;
+  color: black;
+  align-items: center;
+  padding-left: 30px;
+}
+.pathname {
+  color: black;
+}
+.about-me-container {
+  width: 50vw;
+  float: right;
+  font-size: 23px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-right: 0%;
+  height: auto;
+  color: white;
+}
+.email-anchor-tag {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  position: fixed;
+  right: -5%;
+  bottom: 18%;
+
+  transform: rotate(90deg);
+}
+.left-container {
+  /* position: relative; */
+}
+.social-media-links {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  /* align-items: ; */
+  bottom: 0%;
+  left: 0;
+  margin-left: 5%;
+}
