@@ -86,7 +86,6 @@ function About() {
               }}
             ></span>
           </a>
-          <br />
         </div>
       </div>
     </div>

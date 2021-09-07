@@ -1,0 +1,22 @@
+.home-container {
+  background-color: rgba(41, 51, 45, 0.783);
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.heading-and-photo {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+.home-heading {
+  color: #eeebeb;
+  width: 50vw;
+}
+.home-subheading {
+  font-size: 25px;
+}
+.home-photo {
+  height: 300px;
+}
