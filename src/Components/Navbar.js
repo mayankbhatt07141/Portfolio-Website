@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import linksbutton from "../Assets/hamburger.png";
+import linksbutton from "../Assets/ham.png";
 function Navbar() {
   const [showlinks, setShowlinks] = useState(false);
   return (

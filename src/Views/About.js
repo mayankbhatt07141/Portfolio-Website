@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Email from "../Components/Email";
+import Sociallinks from "../Components/Sociallinks";
 import "./About.css";
 function About() {
   return (
@@ -17,8 +19,10 @@ function About() {
       <div className="about-me-container">
         <h4>About Me</h4>
         <p>
-          Hi. My name is Mayank , I am Mca student at College of technology,
-          Pantnagar and Currently Exploring Front End Technologies
+          Hi. My name is Mayank and this is my little corner on internet. I am
+          Mca student at College of technology, Pantnagar.Currently Exploring
+          Front End Technologies and I enjoy creating things that focus
+          usefulness and elegance
         </p>
 
         <a
@@ -35,57 +39,9 @@ function About() {
             &nbsp; download Resume
           </span>
         </a>
-
-        <a
-          href="mailto:mayankbhatt07141@gmail.com"
-          className="email-anchor-tag"
-        >
-          Let's chat {"->"} mayankbhatt07141@gmail.com
-        </a>
-      </div>
-      <div className="left-container">
-        <div className="social-media-links">
-          <a href=" https://www.facebook.com/181mb">
-            <span
-              className="fab fa-facebook"
-              style={{
-                color: "white",
-                fontSize: "23px",
-              }}
-            ></span>
-          </a>
-          <br />
-          <a href="https://www.instagram.com/mayankbhatt07141/">
-            <span
-              className="fab fa-instagram"
-              style={{
-                color: "white",
-
-                fontSize: "23px",
-              }}
-            ></span>
-          </a>
-          <br />
-          <a href="https://www.linkedin.com/in/mayankbhatt07141/">
-            <span
-              className="fab fa-linkedin"
-              style={{
-                color: "white",
-
-                fontSize: "23px",
-              }}
-            ></span>
-          </a>
-          <br />
-          <a href="https://github.com/mayankbhatt07141">
-            <span
-              className="fab fa-github"
-              style={{
-                color: "white",
-                fontSize: "23px",
-              }}
-            ></span>
-          </a>
+        <div className="social-links">
+          <Sociallinks />
+          <Email />
         </div>
       </div>
     </div>

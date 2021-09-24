@@ -1,0 +1,53 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(77, 107, 89, 0.987);
+  position: absolute;
+  top: 80px;
+  bottom: 0%;
+  width: 100%;
+  height: 100vh;
+}
+.path-container {
+  color: white;
+  font-size: 33px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 85px;
+  font-weight: 900;
+}
+.pathname {
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+}
+.progress {
+  flex: 50%;
+  margin-left: 5%;
+  margin-right: 15%;
+}
+.mobile-head {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .progress {
+    margin: 0%;
+  }
+  .path-container {
+    display: none;
+  }
+  .mobile-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+  }
+}

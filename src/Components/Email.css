@@ -1,0 +1,15 @@
+.email-anchor-tag {
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+  position: fixed;
+  right: -5%;
+  bottom: 20%;
+  transform: rotate(90deg);
+  margin-right: 0%;
+}
+@media only screen and (max-width: 650px) {
+  .email-anchor-tag {
+    display: none;
+  }
+}

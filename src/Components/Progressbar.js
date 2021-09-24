@@ -1,12 +1,11 @@
 import React from "react";
-
+import "./Progressbar.css";
 function Progressbar(props) {
-  console.log(props.progress);
+  // console.log(props.progress);
   const baseDivForProgressbar = {
     height: props.height,
-    backgroundColor: "whitesmoke",
+    backgroundColor: "rgb(211, 211, 211)",
     borderRadius: 40,
-    // margin: 50,
     width: "90%",
   };
   const progressbar = {
@@ -16,11 +15,19 @@ function Progressbar(props) {
     borderRadius: 40,
     textAlign: "right",
   };
-  const progressText = { padding: "5px", color: "black", fontWeight: 900 };
+  const progressText = {
+    padding: "5px",
+    margin: 5,
+    color: "rgb(211, 211, 211)",
+    fontWeight: 900,
+  };
   return (
-    <div style={baseDivForProgressbar}>
-      <div style={progressbar}>
-        <p style={progressText}>{props.progress}%</p>
+    <div className="progressbar-container">
+      <span className="heading-progress">{props.name}</span>
+      <div style={baseDivForProgressbar}>
+        <div style={progressbar}>
+          <p style={progressText}>{props.progress}%</p>
+        </div>
       </div>
     </div>
   );

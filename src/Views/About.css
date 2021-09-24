@@ -1,12 +1,14 @@
 .about-container {
-  height: 100vh;
-  background-color: rgba(41, 51, 45, 0.783);
-  position: relative;
+  background-color: rgba(77, 107, 89, 0.987);
+  position: absolute;
+  top: 80px;
+  bottom: 0px;
 }
+
 .path-name-container {
   display: flex;
   background-color: #d3d3d3;
-  height: 150px;
+  height: 140px;
   font-size: 35px;
   color: black;
   align-items: center;
@@ -15,34 +17,25 @@
 .pathname {
   color: black;
 }
+
 .about-me-container {
-  width: 50vw;
-  float: right;
   font-size: 23px;
   padding-left: 5%;
+  background-color: rgba(77, 107, 89, 0.987);
   padding-right: 5%;
-  margin-right: 0%;
+  margin-right: 5%;
+  margin-left: 15%;
   height: auto;
   color: white;
 }
-.email-anchor-tag {
-  color: white;
-  text-decoration: none;
-  font-size: 13px;
-  position: fixed;
-  right: -5%;
-  bottom: 14%;
-  transform: rotate(90deg);
-}
-.left-container {
-  /* position: relative; */
-}
-.social-media-links {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  /* align-items: ; */
-  bottom: 0%;
-  left: 0;
-  margin-left: 5%;
+@media only screen and (max-width: 650px) {
+  .social-links {
+    display: none;
+  }
+  .about-me-container {
+    margin: 0%;
+  }
+  .path-name-container {
+    /* display: none; */
+  }
 }

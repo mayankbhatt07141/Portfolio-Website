@@ -1,0 +1,9 @@
+.heading-progress {
+  font-weight: 900;
+  font-size: 25px;
+  color: rgb(211, 211, 211);
+  margin: 15px;
+}
+.progressbar-container {
+  margin: 5px;
+}
